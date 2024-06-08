@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">LUCKY DRAW API</a>
+    
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        User type
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a href="http://www.google.com" class="dropdown-item">Admin</a>
+        <a href="file:///Users/akshaysingh/templates/addContest.html" class="dropdown-item">Client</a>
+      </div>
+    </div>
+
+    </nav>
+
+    <div class="container mt-5">
+        <div class="col-sm-6"> </div>
+        <div class="col-sm-6">
+            <form method ="POST" action = "#">
+                <div class="form-group row">
+                    <label class="col-sm-5 col-form-label">User ID</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type = "text" name = "user_id" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-5 col-form-label">Contest ID </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type = "text" name = "contest_id" />
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-dark"> GET TOKEN </button>
+            </form>
+            <div> {{ msg }} </div>
+        </div>
+        <div class="col-sm-6"> </div>
+    </div>
+<body>
+</html>
